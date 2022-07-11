@@ -1,0 +1,62 @@
+#menu {
+	@media (min-width: 320px){
+		display: grid;
+		grid-template-columns:1fr ;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"nav"
+		"main"
+		"footer";
+		.menu {background-image: url("../img/fondosushimobile.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			grid-area: main;
+			.menu__total{display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: center;
+				flex-wrap: nowrap;
+			 	padding-top: 2%;
+			 	.menu__texto  { margin: 5% auto;
+			 		#menu__titulo { margin-bottom: 5%;
+			  			text-align: center;
+			  			font-size: $textLg;
+		  			}
+		  			h3{margin-top: 10%;
+		  			}	
+			 	}	
+			 	.sushi {margin-top: 0}
+			}
+		}
+	}
+
+	@media (min-width: 1200px){
+		.menu {background-image: url("../img/fondosushi.jpg");
+			background-size: cover ;
+			background-repeat: no-repeat;
+			.menu__total { flex-direction: row;
+				 align-items: center;
+			 	flex-wrap: nowrap;
+			 	justify-content: flex-end;
+			 	width: 92vw;
+			 	padding-top: 4%;
+			 	padding-bottom: 4%;
+				.menu__texto { margin: 0% 5%;
+					#menu__titulo {font-size: $textXl;
+			  			margin-bottom: 10%;
+			  			margin-left: 95%;
+			  		}
+			  		table {margin-bottom: 20%;
+			  		}
+			  	}	
+				.sushi {padding-top: 8%;	
+					.menu__boton {margin-left: -100%;
+					}
+				}
+			}
+		}	
+	}
+}
+
+
+

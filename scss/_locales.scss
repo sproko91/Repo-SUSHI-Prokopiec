@@ -1,0 +1,32 @@
+.locales {
+	@media (min-width: 320px){
+		background-image: url("../img/local3.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		div {margin: 4% 0;
+		line-height:2em 
+		}
+		h2, ul li {margin-bottom: 2%
+		}	
+		div iframe {width: 280px; 
+				height: 300px;
+				border: 0px;
+		}
+	}
+	@media (min-width: 1200px){
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		text-align: center;
+		div iframe {width: 400px; 
+				height: 300px;
+				border: 0px;
+		}
+	}	
+}
+
+

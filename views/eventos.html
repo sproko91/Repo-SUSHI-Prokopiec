@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sushi Lin - Eventos y Catering</title>
+	<link rel="shortcut icon" href="..//img/favicon.png">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<!-- mi css externo -->
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body id="eventos">
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-nav sticky-top navegacion">
+  	<div class="container-fluid">
+   	 		<a class="navbar-brand d-flex align-items-end" href="../index.html"> <img src="../img/logo.png" class="rounded-pill boton" id="logo" alt="Logo sushi lin shushilin">
+		 	</a>
+    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      		<span class="navbar-toggler-icon"></span>
+    		</button>
+    	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+     		<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        		<li class="nav-item mx-4">
+         		 <a class="nav-link active" aria-current="page" href="../views/menu.html">Menu</a>
+        		</li>
+        		<li class="nav-item  mx-4">
+         		 <a class="nav-link active" href="../views/promociones.html">Promociones</a>
+        		</li>
+        		</li>
+        		<li class="nav-item  mx-4">
+         		 <a class="nav-link active" href="../views/locales.html">Locales</a>
+        		</li>
+        		</li>
+        		<li class="nav-item mx-4">
+         		 <a class="nav-link active" href="../views/eventos.html">Eventos y Catering</a>
+        		</li>
+        	</ul>
+        </div>
+  </div>
+</nav>
+	<!-- end nav -->
+<aside id="aside">
+	<div>
+		<img src="../img/eventos2.jpg" alt="eventos sushi">
+	</div>
+</aside>
+<main class="eventos">
+	<div><h2>Eventos y Catering</h2>
+		<p>Sushi Lin presenta una propuesta diferente que promete hacerte vivir momentos increíbles. Si el objetivo es disfrutar y compartir nuevas sensaciones, Sushi Lin se ocupa de todos los detalles para que vos y tus invitados vivan una experiencia única.</p>
+		<p>Nuestro equipo de Eventos y Catering está preparado para brindar un servicio gastronómico de sushi y cocina de primer nivel, cuidando cada detalle en términos de calidad y estética manteniendo así los estándares de nuestros restaurantes.</p>
+	</div>
+	<form action="eventos.php"> 
+		<fieldset>
+			<legend>Consultar por Eventos y Catering</legend>
+			<div>
+				<label for="nombre y apellido">Nombre y Apellido:</label>
+				<input type="text" id="nombre y apellido" placeholder="Santiago Prokopiec">
+			</div>
+			<div>
+				<label for="telefono">Telefono:</label>
+				<input type="text" id="telefono" placeholder="1512345678">
+			</div>
+			<div>
+				<label for="email">Email:</label>
+				<input type="email" id="email" placeholder="santiago@gmail.com">
+			</div>
+			<div>
+				<label for="personas">Cantidad de Personas:</label>
+				<select name="" id="personas">
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20 a 30">Entre 20 y 30</option>
+				<option value="30 a 50">Entre 30 y 50</option>/<select>
+			</div>		
+			<div>
+				<label for="veggie">Incluye Menu Vegetariano</label>
+				<input type="checkbox" id="veggie">
+			</div>
+			<div>	
+				<label for="vegan">Incluye Menu Vegano</label>
+				<input type="checkbox" id="vegan">
+			</div>
+			<div>
+				<label for="mensaje">Deje su mensaje:</label><br>
+				<textarea name="" id="mensaje" cols="40" rows="5" placeholder="Escriba aqui su mensaje..."></textarea>
+			<div id="botones__form">
+				<input class="boton__form" type="reset" value="Borrar">
+				<input class="boton__form" type="submit" value="Enviar">
+			</div>
+		</fieldset>
+	</form>
+</main>
+<footer>
+	<div class="direcciones">
+		<p>Los Cardales</p>
+		<p>Rivadavia 40, Los Cardales, Buenos Aires.</p>
+		<p>Telefono: +54 1124675151</p><br>
+		<p>Benavidez</p>
+		<p>Presidente Perón 6408, Benavidez, Buenos Aires.</p>
+		<p>Telefono: +54 1136962316</p>
+	</div>
+	<div class="emails">
+		<p id="escribinos">ESCRIBINOS</p>
+		<p>contacto.sushilin@gmail.com</p>
+		<p>contacto.sushilin2@gmail.com</p>
+	</div>
+	<div class="iconos">
+	<a href="https://wa.me/541124675151/" target=_blank>
+		<img class="boton" src="../img/wp.png" alt="whatsapp sushi lin"></a>
+	<a href="https://www.facebook.com/SUSHI-LIN-2299643306979453/" target="_blank">
+		<img class="boton" src="../img/face.png" alt="facebook sushi lin"></a>
+	<a href="https://www.instagram.com/lin.sushi/" target="_blank"><img class="boton" src="../img/ig.png" alt="instagram ig sushi lin" width="60"height="60"></a>
+	</div>
+</footer>
+<script src="../js/bootstrap.min.js"></script>
+</body>	
+</html>
+

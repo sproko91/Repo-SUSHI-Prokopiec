@@ -1,0 +1,24 @@
+* {
+	color:$white ;
+    font-family: $mainFont;
+   	padding: 0;
+   	margin: 0 
+ }
+
+ body {background-image: linear-gradient($secondaryColor,$black)}
+
+ h2 {font-weight: $bold;
+ 	}
+
+ h3, p, a {font-weight: $regular; font-family: $secondaryFont}
+
+//botones
+
+.boton {border-radius: 14px;
+		&:hover{transform: $scale}
+	}
+
+.botonPromo:hover{transform: $scale} 
+
+//bg degrade gris
+#bg-grey {background-image: linear-gradient($secondaryColor,$black)}

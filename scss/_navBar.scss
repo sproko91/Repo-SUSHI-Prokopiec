@@ -1,0 +1,11 @@
+//nesting
+.bg-nav {background-color:$black;
+	li:hover{transform: $sube;
+	}
+	#logo{
+		@media (max-width: 480px){width: 180px}
+		}
+	#logo:hover{transform: $scaleXl;
+	}
+}
+

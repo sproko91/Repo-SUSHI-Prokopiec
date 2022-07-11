@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap");
+* {
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-image: linear-gradient(#363333, #1A1919); }
+
+h2 {
+  font-weight: 500; }
+
+h3, p, a {
+  font-weight: 400;
+  font-family: "Nunito", sans-serif; }
+
+.boton {
+  border-radius: 14px; }
+  .boton:hover {
+    transform: scale(1.05, 1.05); }
+
+.botonPromo:hover {
+  transform: scale(1.05, 1.05); }
+
+#bg-grey {
+  background-image: linear-gradient(#363333, #1A1919); }
+
+.bg-nav {
+  background-color: #1A1919; }
+  .bg-nav li:hover {
+    transform: translateY(-6px); }
+  @media (max-width: 480px) {
+    .bg-nav #logo {
+      width: 180px; } }
+  .bg-nav #logo:hover {
+    transform: scale(1.11, 1.11); }
+
+@media (max-width: 991px) {
+  #carousel {
+    height: 40vh; } }
+
+@media (min-width: 992px) {
+  #carousel {
+    height: 65vh; } }
+
+@media (min-width: 320px) {
+  #menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "main" "footer"; }
+    #menu .menu {
+      background-image: url("../img/fondosushimobile.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      grid-area: main; }
+      #menu .menu .menu__total {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: nowrap;
+        padding-top: 2%; }
+        #menu .menu .menu__total .menu__texto {
+          margin: 5% auto; }
+          #menu .menu .menu__total .menu__texto #menu__titulo {
+            margin-bottom: 5%;
+            text-align: center;
+            font-size: 45px; }
+          #menu .menu .menu__total .menu__texto h3 {
+            margin-top: 10%; }
+        #menu .menu .menu__total .sushi {
+          margin-top: 0; } }
+
+@media (min-width: 1200px) {
+  #menu .menu {
+    background-image: url("../img/fondosushi.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+    #menu .menu .menu__total {
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      width: 92vw;
+      padding-top: 4%;
+      padding-bottom: 4%; }
+      #menu .menu .menu__total .menu__texto {
+        margin: 0% 5%; }
+        #menu .menu .menu__total .menu__texto #menu__titulo {
+          font-size: 60px;
+          margin-bottom: 10%;
+          margin-left: 95%; }
+        #menu .menu .menu__total .menu__texto table {
+          margin-bottom: 20%; }
+      #menu .menu .menu__total .sushi {
+        padding-top: 8%; }
+        #menu .menu .menu__total .sushi .menu__boton {
+          margin-left: -100%; } }
+
+@media (min-width: 320px) {
+  .locales {
+    background-image: url("../img/local3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+    .locales div {
+      margin: 4% 0;
+      line-height: 2em; }
+    .locales h2, .locales ul li {
+      margin-bottom: 2%; }
+    .locales div iframe {
+      width: 280px;
+      height: 300px;
+      border: 0px; } }
+
+@media (min-width: 1200px) {
+  .locales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center; }
+    .locales div iframe {
+      width: 400px;
+      height: 300px;
+      border: 0px; } }
+
+@media (min-width: 320px) {
+  #eventos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "main" "aside" "footer"; }
+    #eventos .navegacion {
+      grid-area: nav; }
+    #eventos #aside {
+      grid-area: aside; }
+      #eventos #aside div img {
+        width: 100%; }
+    #eventos .eventos {
+      grid-area: main;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 4% 0; }
+      #eventos .eventos div p {
+        padding: 2%; }
+      #eventos .eventos form fieldset {
+        margin-top: 2%;
+        text-align: left;
+        padding: 6px;
+        box-sizing: border-box;
+        line-height: 1.8; }
+        #eventos .eventos form fieldset input, #eventos .eventos form fieldset textarea, #eventos .eventos form fieldset select, #eventos .eventos form fieldset option {
+          color: #1A1919; }
+        #eventos .eventos form fieldset input, #eventos .eventos form fieldset select, #eventos .eventos form fieldset option:hover {
+          cursor: pointer; }
+        #eventos .eventos form fieldset #botones__form {
+          text-align: center; }
+          #eventos .eventos form fieldset #botones__form .boton__form {
+            color: whitesmoke;
+            width: 35%;
+            margin: 0 4%;
+            border-radius: 5px;
+            background-image: linear-gradient(#363333, #1A1919);
+            border: 0; }
+            #eventos .eventos form fieldset #botones__form .boton__form:hover {
+              background-image: linear-gradient(#1A1919, #363333);
+              cursor: pointer; } }
+
+@media (min-width: 1200px) {
+  #eventos {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "nav nav" "main aside" "footer footer"; }
+    #eventos .eventos {
+      margin: 0; }
+      #eventos .eventos h2 {
+        font-size: 50px; }
+      #eventos .eventos div p {
+        padding: 0.5%; } }
+
+footer {
+  grid-area: footer;
+  background-color: #1A1919;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  font-size: 14px;
+  padding-top: 10px; }
+  footer .direcciones {
+    text-align: center;
+    margin-top: 2%; }
+  footer .emails {
+    text-align: center;
+    margin: 5% 0; }
+    footer .emails #escribinos {
+      margin-bottom: 2%; }
+
+.iconos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  text-align: center; }
+
+@media (min-width: 1200px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+    padding-top: 0px; }
+    footer .direcciones {
+      text-align: left;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 0.3;
+      padding-left: 15px;
+      line-height: 0.8; }
+    footer .emails {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      margin-bottom: 0;
+      margin-left: 44px;
+      box-sizing: border-box;
+      flex-grow: 2; }
+    footer .iconos {
+      margin-bottom: 0;
+      align-items: center;
+      box-sizing: border-box;
+      flex-grow: 1.2; } }
