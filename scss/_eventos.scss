@@ -16,10 +16,7 @@
 			}
 		}	
 		.eventos {grid-area: main;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+			@include d-flex (column, center, center);
 			text-align: center;
 			margin: 4% 0;
 			div p {padding: 2%;
@@ -29,20 +26,13 @@
 				padding: 6px;
 				box-sizing: border-box;
 				line-height: 1.8;
-				input, textarea, select, option {color: $black;
+				input, textarea, select, option {color: map-get($map:$paleta, $key:"black");
 				}
 				input, select, option:hover {cursor: pointer;
 				}
-				#botones__form	{text-align: center;	
-					.boton__form {color: $white;
-						width: 35%;
-						margin:0 4%;
-						border-radius: 5px;
-						background-image: linear-gradient($secondaryColor,$black);
-						border: 0;
-						&:hover {background-image: linear-gradient($black,$secondaryColor);
-							cursor: pointer;
-						}						
+				#botones__form {text-align: center;	
+					.boton__form {
+						color: map-get($map:$paleta, $key:"white");								
 					}
 				}	
 			}

@@ -7,37 +7,36 @@
 		"nav"
 		"main"
 		"footer";
-		.menu {background-image: url("../img/fondosushimobile.jpg");
+		.menu {background-image: url("../img/fondosushimobile.webp");
 			background-repeat: no-repeat;
 			background-size: 100% 100%;
 			grid-area: main;
-			.menu__total{display: flex;
-				flex-direction: column;
-				align-items: flex-start;
-				justify-content: center;
+			.menu__total{@include d-flex (column, center, flex start);
 				flex-wrap: nowrap;
 			 	padding-top: 2%;
 			 	.menu__texto  { margin: 5% auto;
 			 		#menu__titulo { margin-bottom: 5%;
 			  			text-align: center;
 			  			font-size: $textLg;
+			  			font-family: $mainFont;
+			  			font-style: normal;
 		  			}
 		  			h3{margin-top: 10%;
 		  			}	
 			 	}	
-			 	.sushi {margin-top: 0}
+			 	.sushi {margin-top: 0;
+			 		img {margin-top: 10px}
+			 	}
 			}
 		}
 	}
 
 	@media (min-width: 1200px){
-		.menu {background-image: url("../img/fondosushi.jpg");
+		.menu {background-image: url("../img/fondosushi.webp");
 			background-size: cover ;
 			background-repeat: no-repeat;
-			.menu__total { flex-direction: row;
-				 align-items: center;
+			.menu__total {@include d-flex (row, flex-end, center);
 			 	flex-wrap: nowrap;
-			 	justify-content: flex-end;
 			 	width: 92vw;
 			 	padding-top: 4%;
 			 	padding-bottom: 4%;

@@ -1,11 +1,10 @@
 //nesting
-.bg-nav {background-color:$black;
+.bg-nav {background-color:map-get($map:$paleta, $key:"black");
 	li:hover{transform: $sube;
 	}
 	#logo{
 		@media (max-width: 480px){width: 180px}
-		}
-	#logo:hover{transform: $scaleXl;
+		&:hover{transform: $scaleXl}
 	}
 }
 

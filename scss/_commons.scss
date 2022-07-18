@@ -1,24 +1,42 @@
 * {
-	color:$white ;
+	color: map-get($map:$paleta, $key:"white") ;
     font-family: $mainFont;
    	padding: 0;
    	margin: 0 
  }
 
- body {background-image: linear-gradient($secondaryColor,$black)}
+h1 {font-style:italic ;
+font-family: $secondaryFont}
 
- h2 {font-weight: $bold;
+ h1, h2 {font-weight: $bold;
  	}
 
  h3, p, a {font-weight: $regular; font-family: $secondaryFont}
 
+ .price {color:map-get($map:$paleta, $key:"keyColor");
+        font-weight: $bold;}
+
 //botones
 
-.boton {border-radius: 14px;
-		&:hover{transform: $scale}
-	}
+.boton{border-radius: 14px;
+       &:hover{transform: $scale}
+}
 
-.botonPromo:hover{transform: $scale} 
+.botonPromo:hover{transform: $scale;
+       cursor: pointer;
+       background-image: linear-gradient(map-get($map:$paleta, $key:"black"),map-get($map:$paleta, $key:"secondaryColor"))
+} 
 
+.boton__form {
+               @extend .botonPromo;
+               width: 35%;
+               margin:0 4%;
+               border-radius: 5px;
+               border: 0;
+              
+}                                 
+
+
+	
 //bg degrade gris
-#bg-grey {background-image: linear-gradient($secondaryColor,$black)}
+.bg-grey {background-image: linear-gradient(map-get($map:$paleta, $key:"secondaryColor"),map-get($map:$paleta, $key:"black"))}

@@ -1,0 +1,27 @@
+Sume SEO en todas los HTML a traves de las etiquetas meta e incorporando H1
+
+INDEX
+description: sitio web cocina japonesa especialidad sushi, Restaurante y envios en zona norte"
+keywords: sushi, sushilin, lin, roll, sashimi, niguiri, maki
+
+MENU
+description: nuestro menu completo de sushi y woks
+keywords: sushi, entradas, woks, roll, sashimi, niguiri, maki, geisha
+H1: Menu
+
+PROMOCIONES
+description: nuestras promociones y selecciones de sushi, tablas
+keywords: selecciones, tablas, promociones, sushi, piezas
+H1: Nuestra mejor seleccion para vos
+
+LOCALES
+description:encontranos en nuestros locales de zona norte, benavidez y cardales
+keywords: local, restaurante, sushilin, sushilin2
+H1:Elegi nuestro local mas cercano para disfrutar del mejor sushi
+
+EVENTOS
+description: contactar nuestro servicio de eventos y catering para todo el pais"
+keywords: eventos, catering, todo el pais, sushi, servicio
+H1: Vivi una experiencia magica
+
+- Agregue pantalla error 404 en link de agregar al carrito
