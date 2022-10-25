@@ -23,9 +23,10 @@ function preguntarPedido(){
 
 function pedirNombre(){
     do{
-        nombre = prompt("Bienvenido!. Ingrese su Nombre:")
+        nombre = prompt("Bienvenido! Ingrese su Nombre:")
     }
     while (nombre == "" || nombre == null)
+    alert ("Hola " + nombre + "! Comencemos a armar su pedido!")
     armarPedido()
 }
 
@@ -33,7 +34,7 @@ function salir() {alert("Muchas gracias")
 }
 
 function armarPedido () {
-    let op = prompt ("Hola " + nombre + "! Que quieres pedir hoy?\n\nIngrese el numero de la opcion\n1 - Entradas\n2 - Woks\n3 - Sushi\n4 - Promociones\n5 - Salir")
+    let op = prompt ("Ingrese el numero de la opcion\n1 - Entradas\n2 - Woks\n3 - Sushi\n4 - Promociones\n5 - Salir")
     switch(op){
         case "1":
             mostrarEntradas()
@@ -308,11 +309,11 @@ function armarPedido () {
     function continuarCompra (){    
         let seguirComprando = prompt ("Quieres agregar mas productos? SI/NO")
         
-        if ((seguirComprando === "si" )||(seguirComprando === "SI")){
+        if (seguirComprando.toLowerCase() === "si" ){
         armarPedido()
         }
         else if 
-            ((seguirComprando === "no" )||(seguirComprando === "NO") ){
+            (seguirComprando.toLowerCase() === "no"){
             entrega()
             }
             else{
