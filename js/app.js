@@ -58,7 +58,7 @@ function armarPedido () {
     }
 
     function mostrarEntradas () {
-        let entrada = prompt ("Seleccion de Entradas:\n1 - Tempura de langostinos\n2 - Tempura de Verduras\n3 - Rabas\n4 - Harumakis\n5 - Sashimi Hot\n6 - Giosas\n0 - Volver atras")
+        let entrada = prompt ("Seleccion de Entradas:\n1 - Tempura de langostinos - $ 800\n2 - Tempura de Verduras - $ 500\n3 - Rabas - $ 1000\n4 - Harumakis - $ 650\n5 - Sashimi Hot - $ 750\n6 - Giosas - $ 600\n0 - Volver atras")
         switch(entrada){
             case "1": 
                 aPagar += 800
@@ -102,7 +102,7 @@ function armarPedido () {
     
     }
     function mostrarWoks (){
-        let woks = prompt ("Seleccion de Woks:\n1 - Arroz con Vegetales\n2 - Arroz con Carne\n3 - Arroz con Pollo\n4 - Arroz con Langostinos\n5 - Fideos con Vegetales\n6 - Fideos con Carne\n7 - Fideos con Pollo\n8 - Fideos con Langostinos\n0 - Volver atras")
+        let woks = prompt ("Seleccion de Woks:\n1 - Arroz con Vegetales - $ 750\n2 - Arroz con Carne - $ 900\n3 - Arroz con Pollo - $ 850\n4 - Arroz con Langostinos - $ 1200\n5 - Fideos con Vegetales - $ 800\n6 - Fideos con Carne - $ 950\n7 - Fideos con Pollo - $ 900\n8 - Fideos con Langostinos - $ 1250\n0 - Volver atras")
         switch(woks){
             case "1": 
                 aPagar += 750
@@ -155,7 +155,7 @@ function armarPedido () {
     }
 
     function mostrarSushi (){   
-        let sushi = prompt ("Selecciona de Sushi:\n1 - Buenos Aires\n2 - New York\n3 - California\n4 - Tamago\n5 - Honey\n6 - Ibiza\n7 - Tuna\n8 - Mango\n9 - Veggie\n10 - Vegan\n11 - Chic\n12 - Cucumber\n13 - Niguiri(x3)\n14 - Niguiri AVO (x3)\n15 - Geisha (x3)\n16 - Geisha Kiuri (x3)\n17 - Sashimi (x3)\n0 - Volver atras")
+        let sushi = prompt ("Selecciona de Sushi:\n1 - Buenos Aires - $ 700\n2 - New York - $ 750\n3 - California - $ 800\n4 - Tamago - $ 700\n5 - Honey - $ 800\n6 - Ibiza - $ 950\n7 - Tuna - $ 600\n8 - Mango - $ 650\n9 - Veggie - $ 700\n10 - Vegan - $ 650\n11 - Chic - $ 750\n12 - Cucumber - $ 750\n13 - Niguiri(x3) - $ 450\n14 - Niguiri AVO (x3) - $ 300\n15 - Geisha (x3) - $ 400\n16 - Geisha Kiuri (x3) - $ 350\n17 - Sashimi (x3) - $ 300\n0 - Volver atras")
         switch(sushi){
             case "1": 
                 aPagar += 700
@@ -253,7 +253,7 @@ function armarPedido () {
     }
 
     function mostrarPromociones (){
-        let promociones = prompt ("Seleccion de Promocion:\n1 - Seleccion - 12 piezas\n2 - Seleccion I - 15 piezas\n3 - Seleccion II - 30 piezas\n4 - Seleccion III - 60 piezas\n5 - Omakase Matsuri - 30 piezas\n6 - Niguiri Moriawase - 12 piezas\n7 - Tokusen - 15 piezas\n8 - Veggie - 20 piezas\n0 - Volver atras")
+        let promociones = prompt ("Seleccion de Promocion:\n1 - Seleccion - 12 piezas - $ 1360\n2 - Seleccion I - 15 piezas - $ 1800\n3 - Seleccion II - 30 piezas - $ 3500\n4 - Seleccion III - 60 piezas - $ 5350\n5 - Omakase Matsuri - 30 piezas - $ 3230\n6 - Niguiri Moriawase - 12 piezas - $ 1820\n7 - Tokusen - 15 piezas - $ 1570\n8 - Veggie - 20 piezas - $ 1390\n0 - Volver atras")
         switch(promociones){
             case "1": 
                 aPagar += 1360
