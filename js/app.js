@@ -62,32 +62,32 @@ function armarPedido () {
         switch(entrada){
             case "1": 
                 aPagar += 800
-                carro = carro + "\nTempura de Langostinos"
+                carro = carro + "\nTempura de Langostinos - $ 800"
                 alert ("Se agrego correctamente al carro")
                 break
             case "2": 
                 aPagar += 500
-                carro = carro + "\nTempura de Verduras "
+                carro = carro + "\nTempura de Verduras - $ 500"
                 alert ("Se agrego al carro correctamente")
                 break
             case "3": 
                 aPagar += 1000
-                carro = carro + "\nRabas "
+                carro = carro + "\nRabas - $ 1000"
                 alert ("Se agrego al carro correctamente")
                 break
             case "4": 
                 aPagar += 650
-                carro = carro + "\nHarumakis "
+                carro = carro + "\nHarumakis - $ 650"
                 alert ("Se agrego al carro correctamente")
                 break
             case "5": 
                 aPagar += 750
-                carro = carro + "\nSashimi Hot "
+                carro = carro + "\nSashimi Hot - $ 750"
                 alert ("Se agrego al carro correctamente")
                 break
             case "6": 
                 aPagar += 600
-                carro = carro + "\nGiosas "
+                carro = carro + "\nGiosas - $ 600"
                 alert ("Se agrego al carro correctamente")
                 break
             case "0": 
@@ -106,42 +106,42 @@ function armarPedido () {
         switch(woks){
             case "1": 
                 aPagar += 750
-                carro = carro + "\nArroz con Vegetales "
+                carro = carro + "\nArroz con Vegetales - $ 750"
                 alert ("Se agrego correctamente al carro")
                 break
             case "2": 
                 aPagar += 900
-                carro = carro + "\nArroz con Carne "
+                carro = carro + "\nArroz con Carne - $ 900"
                 alert ("Se agrego al carro correctamente")
                 break
             case "3": 
                 aPagar += 850
-                carro = carro + "\nArroz con Pollo "
+                carro = carro + "\nArroz con Pollo - $ 850"
                 alert ("Se agrego al carro correctamente")
                 break
             case "4": 
                 aPagar += 1200
-                carro = carro + "\nArroz con Langostinos "
+                carro = carro + "\nArroz con Langostinos - $ 1200"
                 alert ("Se agrego al carro correctamente")
                 break
             case "5": 
                 aPagar += 800
-                carro = carro + "\nFideos con Vegetales "
+                carro = carro + "\nFideos con Vegetales - $ 800"
                 alert ("Se agrego correctamente al carro")
                 break
             case "6": 
                 aPagar += 950
-                carro = carro + "\nFideos con Carne "
+                carro = carro + "\nFideos con Carne - $ 950"
                 alert ("Se agrego al carro correctamente")
                 break
             case "7": 
                 aPagar += 900
-                carro = carro + "\nFideos con Pollo "
+                carro = carro + "\nFideos con Pollo - $ 900"
                 alert ("Se agrego al carro correctamente")
                 break
             case "8": 
                 aPagar += 1250
-                carro = carro + "\nFideos con Langostinos "
+                carro = carro + "\nFideos con Langostinos - $ 1250"
                 alert ("Se agrego al carro correctamente")
                 break
             case "0": 
@@ -159,87 +159,87 @@ function armarPedido () {
         switch(sushi){
             case "1": 
                 aPagar += 700
-                carro = carro + "\nBuenos Aires "
+                carro = carro + "\nBuenos Aires - $ 700"
                 alert ("Se agrego correctamente al carro")
                 break
             case "2": 
                 aPagar += 750
-                carro = carro + "\nNew York "
+                carro = carro + "\nNew York - $ 750"
                 alert ("Se agrego al carro correctamente")
                 break
             case "3": 
                 aPagar += 800
-                carro = carro + "\nCalifornia "
+                carro = carro + "\nCalifornia - $ 800"
                 alert ("Se agrego al carro correctamente")
                 break
             case "4": 
                 aPagar += 700
-                carro = carro + "\nTamago "
+                carro = carro + "\nTamago - $ 700"
                 alert ("Se agrego al carro correctamente")
                 break
             case "5": 
                 aPagar += 800
-                carro = carro + "\nHoney "
+                carro = carro + "\nHoney - $ 800"
                 alert ("Se agrego correctamente al carro")
                 break
             case "6": 
                 aPagar += 950
-                carro = carro + "\nIbiza "
+                carro = carro + "\nIbiza - $ 950"
                 alert ("Se agrego al carro correctamente")
                 break
             case "7": 
                 aPagar += 600
-                carro = carro + "\nTuna "
+                carro = carro + "\nTuna - $ 600"
                 alert ("Se agrego al carro correctamente")
                 break
             case "8": 
                 aPagar += 650
-                carro = carro + "\nMango "
+                carro = carro + "\nMango - $ 650"
                 alert ("Se agrego al carro correctamente")
                 break
             case "9": 
                 aPagar += 700
-                carro = carro + "\nVeggie "
+                carro = carro + "\nVeggie - $ 700"
                 alert ("Se agrego al carro correctamente")
                 break
             case "10": 
                 aPagar += 650
-                carro = carro + "\nVegan "
+                carro = carro + "\nVegan - $ 650"
                 alert ("Se agrego al carro correctamente")
                 break
             case "11":
                 aPagar += 750
-                carro = carro + "\nChic "
+                carro = carro + "\nChic - $ 750"
                 alert ("Se agrego al carro correctamente")
                 break
             case "12": 
                 aPagar += 750
-                carro = carro + "\nCucumber "
+                carro = carro + "\nCucumber - $ 750"
                 alert ("Se agrego al carro correctamente")
                 break 
             case "13": 
                 aPagar += 450
-                carro = carro + "\nNiguiri (x3) "
+                carro = carro + "\nNiguiri (x3) - $ 450"
                 alert ("Se agrego al carro correctamente")
                 break
             case "14": 
                 aPagar += 300
-                carro = carro + "\nNiguiri AVO (x3) "
+                carro = carro + "\nNiguiri AVO (x3) - $ 300"
                 alert ("Se agrego al carro correctamente")
                 break
             case "15": 
                 aPagar += 400
-                carro = carro + "\nGeisha (x3) "
+                carro = carro + "\nGeisha (x3) - $ 400"
                 alert ("Se agrego al carro correctamente")
                 break    
             case "16": 
                 aPagar += 350
-                carro = carro + "\nGeisha Kiuri (x3) "
+                carro = carro + "\nGeisha Kiuri (x3) - $ 350"
                 alert ("Se agrego al carro correctamente")
                 break
             case "17": 
                 aPagar += 300
-                carro = carro + "\nSashimi "
+                carro = carro + "\nSashimi - $ 300"
                 alert ("Se agrego al carro correctamente")
                 break                
             case "0": 
@@ -257,42 +257,42 @@ function armarPedido () {
         switch(promociones){
             case "1": 
                 aPagar += 1360
-                carro = carro + "\nSeleccion - 12 piezas "
+                carro = carro + "\nSeleccion - 12 piezas - $ 1360"
                 alert ("Se agrego correctamente al carro")
                 break
             case "2": 
                 aPagar += 1800
-                carro = carro + "\nSeleccion I - 15 piezas "
+                carro = carro + "\nSeleccion I - 15 piezas - $ 1800"
                 alert ("Se agrego al carro correctamente")
                 break
             case "3": 
                 aPagar += 3500
-                carro = carro + "\nSeleccion II - 30 piezas "
+                carro = carro + "\nSeleccion II - 30 piezas - $ 3500"
                 alert ("Se agrego al carro correctamente")
                 break
             case "4": 
                 aPagar += 5350
-                carro = carro + "\nSeleccion III - 60 piezas "
+                carro = carro + "\nSeleccion III - 60 piezas - $ 5350"
                 alert ("Se agrego al carro correctamente")
                 break
             case "5": 
                 aPagar += 3230
-                carro = carro + "\nOmakase Matsuri - 30 piezas "
+                carro = carro + "\nOmakase Matsuri - 30 piezas - $ 3230"
                 alert ("Se agrego correctamente al carro")
                 break
             case "6": 
                 aPagar += 1820
-                carro = carro + "\nNiguiri Moriawase - 12 piezas "
+                carro = carro + "\nNiguiri Moriawase - 12 piezas - $ 1820"
                 alert ("Se agrego al carro correctamente")
                 break
             case "7": 
                 aPagar += 1570
-                carro = carro + "\nTokusen - 15 piezas "
+                carro = carro + "\nTokusen - 15 piezas - $ 1570"
                 alert ("Se agrego al carro correctamente")
                 break
             case "8": 
                 aPagar += 1390
-                carro = carro + "\nVeggie - 20 piezas "
+                carro = carro + "\nVeggie - 20 piezas - $ 1390"
                 alert ("Se agrego al carro correctamente")
                 break
             case "0": 
