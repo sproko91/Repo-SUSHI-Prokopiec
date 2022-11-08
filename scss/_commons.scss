@@ -40,3 +40,10 @@ font-family: $secondaryFont}
 	
 //bg degrade gris
 .bg-grey {background-image: linear-gradient(map-get($map:$paleta, $key:"secondaryColor"),map-get($map:$paleta, $key:"black"))}
+
+.carrito {
+       position: fixed;
+       right: 10px;
+       top: 140px;
+       z-index: 1;
+     }
