@@ -239,13 +239,20 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function agregarCarro(evt) {
-    evt.preventDefault();
+
     let titulo = evt.currentTarget.dataset.titulo;
     let precio = evt.currentTarget.dataset.precio;
     carro.push({ titulo, precio });
     sessionStorage.setItem("carro", JSON.stringify(carro));
     aPagar = aPagar + Number(precio);
     updateCarro();
+    Toastify({
+      text: "Agregado al carro!",
+      duration: 2000,
+      position: 'right',
+      style: {
+        background: 'linear-gradient(to right, #56E409, #14B00C)'}
+  }).showToast();
   }
 
   function updateCarro() {
@@ -271,6 +278,13 @@ document.addEventListener("DOMContentLoaded", () => {
     sessionStorage.removeItem("carro", JSON.stringify(carro));
     aPagar = 0;
     updateCarro();
+    Toastify({
+      text: "Carro vacio!",
+      duration: 2000,
+      position: 'right',
+      style: {
+        background: 'linear-gradient(to right, #FF0000, #C60303)'}
+  }).showToast();
   });
 
   let lnkiraPagar = document.getElementById("btn-abrir-popup");

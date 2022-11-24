@@ -145,6 +145,7 @@
 		"main aside"
 		"footer footer";
 		
+		#carrito {height: 100vh;}
 
 		#desplegables {
 			background-image: url(../img/fondocarro.jpg);
@@ -179,8 +180,12 @@
 					font-weight: $bold;
 					text-align: center;
 					width: 100%;
-					box-sizing: border-box
+					box-sizing: border-box;
+					margin-top: 10px;
 				}			
+				h5 a {text-decoration: none;
+					color: red;
+				}
 			}
         }
 		.popup{width: 500px;}
