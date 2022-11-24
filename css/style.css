@@ -341,6 +341,7 @@ h3, p, a {
     grid-template-areas: "nav nav" "main aside" "footer footer"; }
     #carrito #desplegables {
       background-image: url(../img/fondocarro.jpg);
+      background-size: cover;
       min-height: 500px;
       align-items: stretch; }
       #carrito #desplegables .producto {
