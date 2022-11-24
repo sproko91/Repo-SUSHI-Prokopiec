@@ -148,6 +148,7 @@
 
 		#desplegables {
 			background-image: url(../img/fondocarro.jpg);
+			background-size: cover;
 			min-height: 500px;
 			align-items: stretch;
 			.producto{@include d-flex (row, center, center);
