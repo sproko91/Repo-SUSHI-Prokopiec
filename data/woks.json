@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "item": "Arroz con Vegetales - Apto vegano",
+      "precio": 750,
+      "img": "../img/arrozveg.jpg"
+    },
+    {
+        "id": 2,
+        "item": "Arroz con Carne",
+        "precio": 900,
+        "img": "../img/arrozcarne.jpg"
+    },
+    {
+        "id": 3,
+        "item": "Arroz con Pollo",
+        "precio": 850,
+        "img": "../img/arrozpollo.jpg"
+    },
+    {
+        "id": 4,
+        "item": "Arroz con Langostinos",
+        "precio": 1200,
+        "img": "../img/arrozlango.jpg"
+    },
+    {
+        "id": 5,
+        "item": "Fideos con Vegetales - Apto vegano",
+        "precio": 800,
+        "img": "../img/fideosveg.jpg"
+    },
+    {
+        "id": 6,
+        "item": "Fideos con Carne",
+        "precio": 950,
+        "img": "../img/fideoscarne.jpg"
+    },
+    {
+        "id": 7,
+        "item": "Fideos con Pollo",
+        "precio": 900,
+        "img": "../img/fideospollo.jpg"
+    },
+    {
+        "id": 8,
+        "item": "Fideos con Langostinos",
+        "precio": 1250,
+        "img": "../img/fideoslango.jpg"
+    }
+  ]

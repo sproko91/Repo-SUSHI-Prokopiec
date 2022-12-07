@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "item": "Seleccion - 12 Piezas",
+      "precio": 1360,
+      "img": "../img/promo1.webp"
+    },
+    {
+      "id": 2,
+      "item": "Seleccion I - 15 Piezas",
+      "precio": 1800,
+      "img": "../img/promo2.webp"
+    },
+    {
+        "id": 3,
+        "item": "Seleccion II - 30 Piezas",
+        "precio": 3500,
+        "img": "../img/promo3.webp"
+    },
+    {
+        "id": 4,
+        "item": "Seleccion III - 60 Piezas",
+        "precio": 5350,
+        "img": "../img/promo4.webp"
+    },
+    {
+        "id": 5,
+        "item": "Omakase Matsuri - 30 piezas",
+        "precio": 3230,
+        "img": "../img/promo5.webp"
+    },
+    {
+        "id": 6,
+        "item": "Niguiri Moriawase - 12 piezas",
+        "precio": 1820,
+        "img": "../img/promo6.webp"
+    },
+    {
+        "id": 7,
+        "item": "Tokusen - 15 piezas",
+        "precio": 1570,
+        "img": "../img/promo7.webp"
+    },
+    {
+        "id": 8,
+        "item": "Veggie - 20 piezas",
+        "precio": 1390,
+        "img": "../img/promo8.webp"
+    }
+  ]

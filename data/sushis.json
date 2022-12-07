@@ -1,0 +1,39 @@
+[
+    { "id": 1, "item": "Buenos Aires", "precio": 700, "img": "../img/buenosaires.jpg" },
+    { "id": 2, "item": "New York", "precio": 750, "img": "../img/newyork.jpg" },
+    { "id": 3, "item": "California", "precio": 800, "img": "../img/california.jpg" },
+    { "id": 4, "item": "Tamago", "precio": 700, "img": "../img/tamago.jpg" },
+    { "id": 5, "item": "Honey", "precio": 800, "img": "../img/honey.jpg" },
+    { "id": 6, "item": "Ibiza", "precio": 950, "img": "../img/ibiza.jpg" },
+    { "id": 7, "item": "Tuna", "precio": 800, "img": "../img/tuna.jpg" },
+    { "id": 8, "item": "Mango", "precio": 650, "img": "../img/mango.jpg" },
+    { "id": 9, "item": "Veggie", "precio": 700, "img": "../img/veggie.jpg" },
+    {
+      "id": 10,
+      "item": "Vegan - Apto vegano",
+      "precio": 650,
+      "img": "../img/vegan.jpg"
+    },
+    { "id": 11, "item": "Chic - Apto vegano", "precio": 750, "img": "../img/chic.jpg" },
+    {
+      "id": 12,
+      "item": "Cucumber - Apto vegano",
+      "precio": 750,
+      "img": "../img/cucumber.jpg"
+    },
+    { "id": 13, "item": "Niguiri (x3)", "precio": 450, "img": "../img/niguiri.jpg" },
+    {
+      "id": 14,
+      "item": "Niguiri AVO (x3) - Apto vegano",
+      "precio": 300,
+      "img": "../img/niguiriavo.jpg"
+    },
+    { "id": 15, "item": "Geisha (x3)", "precio": 400, "img": "../img/geisha.jpg" },
+    {
+      "id": 16,
+      "item": "Geisha Kiuri (x3)",
+      "precio": 350,
+      "img": "../img/geishakiuri.jpg"
+    },
+    { "id": 17, "item": "Sashimi (x3)", "precio": 300, "img": "../img/sashimi.jpg" }
+  ]

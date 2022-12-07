@@ -84,6 +84,10 @@
 		}
 
 		.popup {
+			width: 100%;
+			height: 75%;
+			font-size: small;
+			box-sizing: border-box;
 			background-color: map-get($map:$paleta, $key:"white");
 			box-shadow: 0px 0px 5px 0px rgba(0,0,0,.8);
 			padding: 10px 15px;
@@ -126,6 +130,8 @@
 				border-radius: 5px;
 				border: none;
 				transition: .3s ease all;
+				position: relative;
+				top: -10px;
 			}
 			.btn-submit:hover{
 				background-color: rgba(241, 144, 29,0.8);
@@ -188,7 +194,8 @@
 				}
 			}
         }
-		.popup{width: 500px;}
+		.popup{width: 500px;
+			height: 65%;}
 		footer {z-index: 2;}
 	}
 }

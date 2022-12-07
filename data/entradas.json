@@ -1,0 +1,38 @@
+[
+    {
+    "id": 1,
+    "item": "Tempura de Langostinos",
+    "precio": 800,
+    "img": "../img/langostino.jpg"
+  },
+  {
+    "id": 2,
+    "item": "Tempura de Verduras - Apto vegano",
+    "precio": 500,
+    "img": "../img/verduras.jpg"
+  },
+
+  { "id": 3, 
+  "item": "Rabas",
+   "precio": 1000, 
+   "img": "../img/rabas.jpg" 
+},
+
+  { "id": 4, 
+  "item": "Harumakis", 
+  "precio": 650,
+   "img": "../img/harumakis.jpg" 
+},
+
+  { "id": 5, 
+  "item": "Sashimi Hot",
+   "precio": 750,
+    "img": "../img/sashi.jpg" 
+},
+
+  { "id": 6, 
+  "item": "Giosas", 
+  "precio": 600,
+   "img": "../img/giosas.jpg" 
+}
+]

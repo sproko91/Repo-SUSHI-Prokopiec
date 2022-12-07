@@ -1,244 +1,144 @@
+
 document.addEventListener("DOMContentLoaded", () => {
-  let aPagar = 0;
-  let carro = [];
 
-  const entradas = [
-    {
-      id: 1,
-      item: "Tempura de Langostinos",
-      precio: 800,
-      img: "../img/langostino.jpg",
-    },
-    {
-      id: 2,
-      item: "Tempura de Verduras - Apto vegano",
-      precio: 500,
-      img: "../img/verduras.jpg",
-    },
-    { id: 3, item: "Rabas", precio: 1000, img: "../img/rabas.jpg" },
-    { id: 4, item: "Harumakis", precio: 650, img: "../img/harumakis.jpg" },
-    { id: 5, item: "Sashimi Hot", precio: 750, img: "../img/sashi.jpg" },
-    { id: 6, item: "Giosas", precio: 600, img: "../img/giosas.jpg" },
-  ];
 
-  const woks = [
-    {
-      id: 1,
-      item: "Arroz con Vegetales - Apto vegano",
-      precio: 750,
-      img: "../img/arrozveg.jpg",
-    },
-    {
-      id: 2,
-      item: "Arroz con Carne",
-      precio: 900,
-      img: "../img/arrozcarne.jpg",
-    },
-    {
-      id: 3,
-      item: "Arroz con Pollo",
-      precio: 850,
-      img: "../img/arrozpollo.jpg",
-    },
-    {
-      id: 4,
-      item: "Arroz con Langostinos",
-      precio: 1200,
-      img: "../img/arrozlango.jpg",
-    },
-    {
-      id: 5,
-      item: "Fideos con Vegetales - Apto vegano",
-      precio: 800,
-      img: "../img/fideosveg.jpg",
-    },
-    {
-      id: 6,
-      item: "Fideos con Carne",
-      precio: 950,
-      img: "../img/fideoscarne.jpg",
-    },
-    {
-      id: 7,
-      item: "Fideos con Pollo",
-      precio: 900,
-      img: "../img/fideospollo.jpg",
-    },
-    {
-      id: 8,
-      item: "Fideos con Langostinos",
-      precio: 1250,
-      img: "../img/fideoslango.jpg",
-    },
-  ];
 
-  const sushis = [
-    { id: 1, item: "Buenos Aires", precio: 700, img: "../img/buenosaires.jpg" },
-    { id: 2, item: "New York", precio: 750, img: "../img/newyork.jpg" },
-    { id: 3, item: "California", precio: 800, img: "../img/california.jpg" },
-    { id: 4, item: "Tamago", precio: 700, img: "../img/tamago.jpg" },
-    { id: 5, item: "Honey", precio: 800, img: "../img/honey.jpg" },
-    { id: 6, item: "Ibiza", precio: 950, img: "../img/ibiza.jpg" },
-    { id: 7, item: "Tuna", precio: 800, img: "../img/tuna.jpg" },
-    { id: 8, item: "Mango", precio: 650, img: "../img/mango.jpg" },
-    { id: 9, item: "Veggie", precio: 700, img: "../img/veggie.jpg" },
-    {
-      id: 10,
-      item: "Vegan - Apto vegano",
-      precio: 650,
-      img: "../img/vegan.jpg",
-    },
-    { id: 11, item: "Chic - Apto vegano", precio: 750, img: "../img/chic.jpg" },
-    {
-      id: 12,
-      item: "Cucumber - Apto vegano",
-      precio: 750,
-      img: "../img/cucumber.jpg",
-    },
-    { id: 13, item: "Niguiri (x3)", precio: 450, img: "../img/niguiri.jpg" },
-    {
-      id: 14,
-      item: "Niguiri AVO (x3) - Apto vegano",
-      precio: 300,
-      img: "../img/niguiriavo.jpg",
-    },
-    { id: 15, item: "Geisha (x3)", precio: 400, img: "../img/geisha.jpg" },
-    {
-      id: 16,
-      item: "Geisha Kiuri (x3)",
-      precio: 350,
-      img: "../img/geishakiuri.jpg",
-    },
-    { id: 17, item: "Sashimi (x3)", precio: 300, img: "../img/sashimi.jpg" },
-  ];
+function obtenerEntradasJSON() {
 
-  const promociones = [
-    {
-      id: 1,
-      item: "Seleccion - 12 Piezas",
-      precio: 1360,
-      img: "../img/promo1.webp",
-    },
-    {
-      id: 2,
-      item: "Seleccion I - 15 Piezas",
-      precio: 1800,
-      img: "../img/promo2.webp",
-    },
-    {
-      id: 3,
-      item: "Seleccion II - 30 Piezas",
-      precio: 3500,
-      img: "../img/promo3.webp",
-    },
-    {
-      id: 4,
-      item: "Seleccion III - 60 Piezas",
-      precio: 5350,
-      img: "../img/promo4.webp",
-    },
-    {
-      id: 5,
-      item: "Omakase Matsuri - 30 piezas",
-      precio: 3230,
-      img: "../img/promo5.webp",
-    },
-    {
-      id: 6,
-      item: "Niguiri Moriawase - 12 piezas",
-      precio: 1820,
-      img: "../img/promo6.webp",
-    },
-    {
-      id: 7,
-      item: "Tokusen - 15 piezas",
-      precio: 1570,
-      img: "../img/promo7.webp",
-    },
-    {
-      id: 8,
-      item: "Veggie - 20 piezas",
-      precio: 1390,
-      img: "../img/promo8.webp",
-    },
-  ];
+fetch('../data/entradas.json')
+.then((res)=>{
+  return res.json()
+})
+.then((entradas)=>{
+  card = document.getElementById("collapseExample")
+  render(entradas);
+   
+ })
+.catch((error)=> console.log(error))    
 
-  const menues = [
-    { id: 1, titulo: "Entradas", items: entradas },
-    { id: 2, titulo: "Woks", items: woks },
-    { id: 3, titulo: "Sushis", items: sushis },
-    { id: 4, titulo: "Promociones", items: promociones },
-  ];
+}
 
-  let mostrarEntradas = mostrarItems(menues[0].items);
-  let mostrarWoks = mostrarItems(menues[1].items);
-  let mostrarSushis = mostrarItems(menues[2].items);
-  let mostrarPromociones = mostrarItems(menues[3].items);
+function obtenerWoksJSON() {
 
-  var card;
-
-  function mostrarItems(productos) {
-    productos.forEach((producto) => {
-      function crearItem() {
-        let div1 = document.createElement("div");
-        div1.classList.add("card", "bg-grey", "producto");
-
-        let div2 = document.createElement("div");
-
-        let img = document.createElement("img");
-        img.classList.add("img-fluid", "rounded-start", "imgProducto");
-        img.src = producto.img;
-
-        let div3 = document.createElement("div");
-        div3.className = "col-lg-9";
-
-        let div4 = document.createElement("div");
-        div4.classList.add("card-body", "d-flex", "justify-content-evenly");
-
-        let h5 = document.createElement("h5");
-        h5.className = "card-title";
-        h5.textContent = producto.item;
-
-        let p = document.createElement("p");
-        p.className = "card-text mx-2";
-        p.textContent = "$ " + producto.precio;
-
-        const a = document.createElement("a");
-        a.className = "mas";
-
-        let img2 = document.createElement("img");
-        img2.src = "../img/add-icon.png";
-        img2.dataset.titulo = producto.item;
-        img2.dataset.precio = producto.precio;
-
-        img2.addEventListener("click", agregarCarro);
-
-        card.appendChild(div1);
-        div1.appendChild(div2);
-        div2.appendChild(img);
-        div1.appendChild(div3);
-        div3.appendChild(div4);
-        div4.appendChild(h5);
-        div4.appendChild(p);
-        div4.appendChild(a);
-        a.appendChild(img2);
-      }
-
-      if (productos == menues[0].items) {
-        card = document.getElementById("collapseExample");
-      } else if (productos == menues[1].items) {
-        card = document.getElementById("collapseExample1");
-      } else if (productos == menues[2].items) {
-        card = document.getElementById("collapseExample2");
-      } else if (productos == menues[3].items) {
-        card = document.getElementById("collapseExample3");
-      }
-
-      crearItem();
-    });
+  fetch('../data/woks.json')
+  .then((res)=>{
+    return res.json()
+  })
+  .then((woks)=>{
+    card = document.getElementById("collapseExample1")
+    render(woks);
+     
+   })
+  .catch((error)=> console.log(error))    
+  
   }
 
-  function agregarCarro(evt) {
+function obtenerSushisJSON() {
+
+    fetch('../data/sushis.json')
+    .then((res)=>{
+      return res.json()
+    })
+    .then((sushis)=>{
+      card = document.getElementById("collapseExample2")
+      render(sushis);
+       
+     })
+    .catch((error)=> Swal.fire({
+      title:
+        error,
+      
+      icon: "error",
+      confirmButtonText: "Salir",
+    }))    
+    
+    } 
+
+function obtenerPromocionesJSON() {
+
+  fetch('../data/promociones.json')
+  .then((res)=>{
+    return res.json()
+  })
+  .then((promociones)=>{
+    card = document.getElementById("collapseExample3")
+    render(promociones);
+     
+   })
+   .catch((error)=> Swal.fire({
+    title:
+      error,
+    
+    icon: "error",
+    confirmButtonText: "Salir",
+  }))    
+  
+  }
+
+
+
+const render = (datos)=>{
+  
+  datos.forEach((dato) => {{
+    
+      let div1 = document.createElement("div");
+      div1.classList.add("card", "bg-grey", "producto");
+
+      let div2 = document.createElement("div");
+
+      let img = document.createElement("img");
+      img.classList.add("img-fluid", "rounded-start", "imgProducto");
+      img.src = dato.img;
+
+      let div3 = document.createElement("div");
+      div3.className = "col-lg-9";
+
+      let div4 = document.createElement("div");
+      div4.classList.add("card-body", "d-flex", "justify-content-evenly");
+
+      let h5 = document.createElement("h5");
+      h5.className = "card-title";
+      h5.textContent = dato.item;
+
+      let p = document.createElement("p");
+      p.className = "card-text mx-2";
+      p.textContent = "$ " + dato.precio;
+
+      const a = document.createElement("a");
+      a.className = "mas";
+
+      let img2 = document.createElement("img");
+      img2.src = "../img/add-icon.png";
+      img2.dataset.titulo = dato.item;
+      img2.dataset.precio = dato.precio;
+
+      img2.addEventListener("click", agregarCarro);
+
+      card.appendChild(div1);
+      div1.appendChild(div2);
+      div2.appendChild(img);
+      div1.appendChild(div3);
+      div3.appendChild(div4);
+      div4.appendChild(h5);
+      div4.appendChild(p);
+      div4.appendChild(a);
+      a.appendChild(img2);
+    }
+})
+}
+
+
+obtenerEntradasJSON()
+obtenerWoksJSON()
+obtenerSushisJSON()
+obtenerPromocionesJSON()
+
+
+  let aPagar = 0;
+  let carro = [];
+  var card;
+  
+function agregarCarro(evt) {
 
     let titulo = evt.currentTarget.dataset.titulo;
     let precio = evt.currentTarget.dataset.precio;
@@ -477,4 +377,5 @@ document.addEventListener("DOMContentLoaded", () => {
       checked = radio;
     };
   }
-});
+})
+
